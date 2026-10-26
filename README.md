@@ -480,11 +480,13 @@ Authentication functionality can be tested using the React application and Postm
 
 \| Logout | Clear local session and redirect to Login |
 
-## 🎬 Project Demo
+## 🎬 Project Demo Videos
 
-Watch the Nexora HRMS Employee CRUD demonstration:
-
+### Task 2 — Employee CRUD Demonstration
 [▶️ Watch CRUD Demo](demo/CRUD_Demo.mp4)
+
+### Task 3 — JWT Authentication Demonstration
+[▶️ Watch Authentication Demo](demo/Authentication_Demo.mp4)
 
 ## Screenshots
 
