@@ -1,6 +1,7 @@
 
 from rest_framework import viewsets, filters
 from rest_framework.pagination import PageNumberPagination
+from rest_framework.permissions import IsAuthenticated
 
 from .models import Employee
 from .serializers import EmployeeSerializer
@@ -16,6 +17,9 @@ class EmployeeViewSet(viewsets.ModelViewSet):
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
     pagination_class = EmployeePagination
+
+    # Only authenticated users can access employee data
+    permission_classes = [IsAuthenticated]
 
     filter_backends = [
         filters.SearchFilter,
